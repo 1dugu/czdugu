@@ -159,22 +159,6 @@
       <img src="./hope.png" alt="该死的图片，竟然加载不出来！" id="img" />
     </div>
     <script>
-      const handleSubmit = (event) => {
-        event.preventDefault();
-
-        const myForm = event.target;
-        const formData = new FormData(myForm);
-
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-        })
-          .then(() => console.log("Form successfully submitted"))
-          .catch((error) => alert(error));
-      };
-
-      document.querySelector("form").addEventListener("submit", handleSubmit);
 
       var btn = document.getElementById("tjan");
       btn.addEventListener("click", tj);

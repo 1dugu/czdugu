@@ -1,143 +1,180 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>独孤会-换届赛</title>
     <style>
-        body{
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            width: 100%;
-            background-color: #f1f1f1;
-        }
-        label{
-            margin-bottom: 7px;
-        }
-        input{
-            margin-bottom: 30px;
-        }
-        .flex{
-            display: flex;
-        }
-        .column{
-            flex-direction: column;
-        }
-        #hf{
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 60px;
-            border-bottom: 1px solid #d3d3d3;
-            background-color: #ffffff;
-        }
-        #hf h1{
-            letter-spacing: 20px;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-weight: bolder;
-        }
-        #img{
-            width: 100%;
-            margin-top: 40px;
-            border-top: 1px solid #d3d3d3;
-        }
-        #lzy,#nsq,#kby,#zqy,#hy,#zyf,#dwb,#zxy,#zhq,#zkl,#fyq,#zrl,#zyr,#lxy,#adrm{
-            width: 60%;
-        }
-        #xsh{
-            margin-bottom: 80px;
-        }
-        #qzy{
-            margin-bottom: 40px;
-        }
-        #tjq{
-            justify-content: center;
-            align-items: center;
-        }
-        #tjan{
-            width: 110px;
-            height: 50px;
-            font-size: 30px;
-            text-align: center;
-            padding-top: 8px;
-            background-color: #000000;
-            color: #ffffff;
-            
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+      label {
+        margin-bottom: 7px;
+      }
+      input {
+        margin-bottom: 30px;
+      }
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      #hf {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+        border-bottom: 1px solid #d3d3d3;
+        background-color: #ffffff;
+      }
+      #hf h1 {
+        letter-spacing: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: bolder;
+      }
+      #img {
+        width: 100%;
+        margin-top: 40px;
+        border-top: 1px solid #d3d3d3;
+      }
+      #lzy,
+      #nsq,
+      #kby,
+      #zqy,
+      #hy,
+      #zyf,
+      #dwb,
+      #zxy,
+      #zhq,
+      #zkl,
+      #fyq,
+      #zrl,
+      #zyr,
+      #lxy,
+      #adrm {
+        width: 60%;
+      }
+      #xsh {
+        margin-bottom: 80px;
+      }
+      #qzy {
+        margin-bottom: 40px;
+      }
+      #tjq {
+        justify-content: center;
+        align-items: center;
+      }
+      #tjan {
+        width: 110px;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 8px;
+        background-color: #000000;
+        color: #ffffff;
+      }
     </style>
-</head>
-<body class="flex column">
+  </head>
+  <body class="flex column">
     <!-- 声明横幅 -->
     <div class="flex" id="hf">
-        <!-- 声明文字 -->
-        <h1>独孤会换届选举</h1>
+      <!-- 声明文字 -->
+      <h1>独孤会换届选举</h1>
     </div>
     <!-- 投票区域 -->
     <div>
-        <!-- 投票区 -->
-        <div>
-            <!-- 表单 -->
-            <form action="" class="flex column" id="myfrom">
-                <label for="adrm">请输入你的准考证号</label>
-                <input type="text" name="adrm" id="adrm" value="">
-                <label for="lzy">选择刘梓玉的部门</label>
-                <input type="text" name="lzy" id="lzy" list="lst" value="">
-                <label for="nsq">选择牛诗琪的部门</label>
-                <input type="text" name="nsq" id="nsq" list="lst" value="">
-                <label for="kby">选择康炳一的部门</label>
-                <input type="text" name="kby" id="kby" list="lst" value="">
-                <label for="zqy">选择赵淇塬的部门</label>
-                <input type="text" name="zqy" id="zqy" list="lst" value="">
-                <label for="hy">选择郝翼的部门</label>
-                <input type="text" name="hy" id="hy" list="lst" value="">
-                <label for="zyf">选择赵语霏的部门</label>
-                <input type="text" name="zyf" id="zyf" list="lst" value="">
-                <label for="dwb">选择杜文博的部门</label>
-                <input type="text" name="dwb" id="dwb" list="lst" value="">
-                <label for="zhq">选择赵海青的部门</label>
-                <input type="text" name="zhq" id="zhq" list="lst" value="">
-                <label for="zxy">选择张欣怡的部门</label>
-                <input type="text" name="zxy" id="zxy" list="lst" value="">
-                <label for="zkl">选择张凯林的部门</label>
-                <input type="text" name="zkl" id="zkl" list="lst" value="">
-                <label for="fyq">选择付业清的部门</label>
-                <input type="text" name="fyq" id="fyq" list="lst" value="">
-                <label for="zrl">选择赵锐龙的部门</label>
-                <input type="text" name="zrl" id="zrl" list="lst" value="">
-                <label for="zyr">选择赵瑛蕊的部门</label>
-                <input type="text" name="zyr" id="zyr" list="lst" value="">
-                <label for="lxy">选择李旭尧的部门</label>
-                <input type="text" name="lxy" id="lxy" list="lst" value="">
-                
-                <datalist id="lst">
-                    <option value="宣赏处">宣赏处</option>
-                    <option value="检察台">检察台</option>
-                    <option value="燹月人事阁">燹月人事阁</option>
-                    <option value="燹月教务阁">燹月教务阁</option>
-                    <option value="燹月培训部">燹月培训部</option>
-                    <option value="燹月信息部">燹月信息部</option>
-                    <option value="护卫院">护卫院</option>
-                    <option value="后勤署">后勤署</option>
-                </datalist>
-                <!-- 宣誓区 -->
-                <label for="xsh">请在下方输入：<br>
-                    我已认真阅读并同意competitions.dugu.asia中所展示的十三条选举规则并且将严格遵守
-                </label>
-                <textarea name="xsh" id="xsh" cols="30" rows="5"></textarea>
-            </form>
-        </div>
-        <!-- 提交区 -->
-        <div class="flex column" id="tjq">
-            <p id="qzy">请认真检查是否有未填写或填写不正确的文本</p>
-            <div id="tjan">
-                提交
-            </div>
-        </div>
+      <!-- 投票区 -->
+      <div>
+        <!-- 表单 -->
+        <form
+          action=""
+          class="flex column"
+          id="myfrom"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
+          <label for="adrm">请输入你的准考证号</label>
+          <input type="text" name="adrm" id="adrm" value="" />
+          <label for="lzy">选择刘梓玉的部门</label>
+          <input type="text" name="lzy" id="lzy" list="lst" value="" />
+          <label for="nsq">选择牛诗琪的部门</label>
+          <input type="text" name="nsq" id="nsq" list="lst" value="" />
+          <label for="kby">选择康炳一的部门</label>
+          <input type="text" name="kby" id="kby" list="lst" value="" />
+          <label for="zqy">选择赵淇塬的部门</label>
+          <input type="text" name="zqy" id="zqy" list="lst" value="" />
+          <label for="hy">选择郝翼的部门</label>
+          <input type="text" name="hy" id="hy" list="lst" value="" />
+          <label for="zyf">选择赵语霏的部门</label>
+          <input type="text" name="zyf" id="zyf" list="lst" value="" />
+          <label for="dwb">选择杜文博的部门</label>
+          <input type="text" name="dwb" id="dwb" list="lst" value="" />
+          <label for="zhq">选择赵海青的部门</label>
+          <input type="text" name="zhq" id="zhq" list="lst" value="" />
+          <label for="zxy">选择张欣怡的部门</label>
+          <input type="text" name="zxy" id="zxy" list="lst" value="" />
+          <label for="zkl">选择张凯林的部门</label>
+          <input type="text" name="zkl" id="zkl" list="lst" value="" />
+          <label for="fyq">选择付业清的部门</label>
+          <input type="text" name="fyq" id="fyq" list="lst" value="" />
+          <label for="zrl">选择赵锐龙的部门</label>
+          <input type="text" name="zrl" id="zrl" list="lst" value="" />
+          <label for="zyr">选择赵瑛蕊的部门</label>
+          <input type="text" name="zyr" id="zyr" list="lst" value="" />
+          <label for="lxy">选择李旭尧的部门</label>
+          <input type="text" name="lxy" id="lxy" list="lst" value="" />
+
+          <datalist id="lst">
+            <option value="宣赏处">宣赏处</option>
+            <option value="检察台">检察台</option>
+            <option value="燹月人事阁">燹月人事阁</option>
+            <option value="燹月教务阁">燹月教务阁</option>
+            <option value="燹月培训部">燹月培训部</option>
+            <option value="燹月信息部">燹月信息部</option>
+            <option value="护卫院">护卫院</option>
+            <option value="后勤署">后勤署</option>
+          </datalist>
+          <!-- 宣誓区 -->
+          <label for="xsh"
+            >请在下方输入：<br />
+            我已认真阅读并同意competitions.dugu.asia中所展示的十三条选举规则并且将严格遵守
+          </label>
+          <textarea name="xsh" id="xsh" cols="30" rows="5"></textarea>
+        </form>
+      </div>
+      <!-- 提交区 -->
+      <div class="flex column" id="tjq">
+        <p id="qzy">请认真检查是否有未填写或填写不正确的文本</p>
+        <div id="tjan">提交</div>
+      </div>
     </div>
     <!-- 宣传海报 -->
     <div id="xchb">
-        <img src="./hope.png" alt="该死的图片，竟然加载不出来！" id="img">
+      <img src="./hope.png" alt="该死的图片，竟然加载不出来！" id="img" />
     </div>
-    
-</body>
+    <script>
+      const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => console.log("Form successfully submitted"))
+          .catch((error) => alert(error));
+      };
+
+      document.querySelector("form").addEventListener("submit", handleSubmit);
+    </script>
+  </body>
 </html>

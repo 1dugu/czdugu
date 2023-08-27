@@ -175,6 +175,13 @@
       };
 
       document.querySelector("form").addEventListener("submit", handleSubmit);
+
+      var btn = document.querySelector("#tjan");
+      btn.addEventListener("click", tj);
+      
+      function tj (){
+        alert("已提交，请不要重复点击")
+      }
     </script>
   </body>
 </html>

@@ -92,11 +92,11 @@
       <div>
         <!-- 表单 -->
         <form
-          action=""
+          action="https://api.netlify.com/forms/myfrom/submissions"
           class="flex column"
           id="myfrom"
           name="contact"
-          method="post"
+          method="POST"
           data-netlify="true"
         >
           <label for="adrm">请输入你的准考证号</label>
@@ -151,7 +151,7 @@
       <!-- 提交区 -->
       <div class="flex column" id="tjq">
         <p id="qzy">请认真检查是否有未填写或填写不正确的文本</p>
-        <div id="tjan">提交</div>
+        <div id="tjan"><input type="submit" value="提交"></div>
       </div>
     </div>
     <!-- 宣传海报 -->
@@ -166,31 +166,7 @@
         alert("已提交，请不要重复点击");
       }
 
-      document
-        .getElementById("myform")
-        .addEventListener("submit", function (e) {
-          e.preventDefault(); // 阻止表单的默认提交行为
-
-          var form = e.target;
-          var formData = new FormData(form); // 创建一个FormData对象，用于获取表单的数据
-
-          fetch("https://api.netlify.com/api/v1/forms/{form_id}/submissions", {
-            // 向Netlify Forms的API地址发送POST请求
-            method: "POST",
-            body: formData,
-          })
-            .then(function (response) {
-              // 处理表单提交成功后的响应
-              console.log("提交成功！");
-              alert("提交成功")
-              form.reset(); // 清空表单
-            })
-            .catch(function (error) {
-              // 处理表单提交失败的情况
-              console.error("提交失败：", error);
-              alert("提交失败")
-            });
-        });
+      
     </script>
   </body>
 </html>
